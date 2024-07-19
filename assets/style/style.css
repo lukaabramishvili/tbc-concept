@@ -1,0 +1,19 @@
+body{
+    margin: 0 21vw;
+}
+
+header{
+    background-color: #FFFFFF;
+}
+
+main{
+    background-color: #F9FAFA;
+}
+
+.tbcConcept{
+    background-image: url('./assets/images/tbsConceptBackground.png');
+}
+
+.nakrebi a{
+    text-decoration: none;
+}
