@@ -1,19 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.right-arrow{
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
 body{
-    margin: 0 21vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header{
-    background-color: #FFFFFF;
+    width: 100%;
+    padding: 0 20vw;
 }
 
-main{
+header .container{
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.header ul{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    gap: 2vw;
+    list-style: none;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search-icon{
+    max-width: 1.1rem;
+    max-height: 1.1rem;
+}
+
+.subscribe-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.leftArrow{
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+.lang{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.language{
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+.main{
     background-color: #F9FAFA;
+    width: 100vw;
+    padding: 0 20vw;
+
 }
 
 .tbcConcept{
     background-image: url('./assets/images/tbsConceptBackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    padding: 6rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 40rem;
+    background-color: green;
+    min-width: 69.375rem;
+    min-height: 23.5rem;
+    border-radius: 0.5rem;
 }
 
-.nakrebi a{
-    text-decoration: none;
+.tbcConcept button{
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    background-color: #3240e5;
+    color: #FFFFFF;
+}
+
+.tbcConcept button img{
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+.big-message{
+    padding: 4rem 0;
+}
+
+.team{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-areas:
+    'A b'
+    'c b';
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    color: #FFFFFF;
+}
+
+.team a{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.digital{
+    background-image: url('./assets/images/digital.png');
+    background-color: green;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start;
+    padding: 2rem;
+    min-height: 16rem;
+}
+
+.card-360{
+    background-color: green;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start;
+    padding: 2rem;
+    min-height: 34rem;
+    grid-area: span 2 / span 1 / span 2 / span 1;
+}
+
+.premium{
+    background-color: green;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start;
+    padding: 2rem;
+    min-height: 16rem;
+}
+
+.statistiks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 9rem 0;
+}
+
+.user{
+    padding: 2.5rem 3rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    min-width: 21.875rem;
+    min-height: 11.25;
+}
+
+.user h1{
+    color: #141719;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.user p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #555f62;
+}
+
+.event{
+    padding: 2.5rem 3rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    min-width: 21.875rem;
+    min-height: 11.25;
+}
+
+.event h1{
+    color: #141719;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.event p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #555f62;
+}
+
+.suggest{
+    padding: 2.5rem 3rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    min-width: 21.875rem;
+    min-height: 11.25;
+}
+
+.suggest h1{
+    color: #141719;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.suggest p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #555f62;
 }
