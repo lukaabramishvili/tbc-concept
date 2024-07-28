@@ -62,6 +62,30 @@ header .container{
     line-height: 1.7;
 }
 
+.burger{
+    display: none;
+}
+
+@media only screen and (max-width: 1340px) {
+    .navbar{
+        display: none;
+    }
+    .burger{
+        display: block;
+        width: 1.5rem;
+        height: 0.2rem;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    .burger .burger-div{
+        background-color: black;
+        width: 1.5rem;
+        height: 0.2rem;
+        margin: 0.2rem;
+    }
+}
+
 .header-right{
     display: flex;
     align-items: center;
@@ -71,6 +95,18 @@ header .container{
 .search-icon{
     max-width: 1.1rem;
     max-height: 1.1rem;
+}
+
+.digital{
+    cursor: pointer;
+}
+
+.card-360{
+    cursor: pointer;
+}
+
+.premium{
+    cursor: pointer;
 }
 
 .subscribe-team{
@@ -112,23 +148,23 @@ header .container{
 .main{
     background-color: #F9FAFA;
     width: 100vw;
-    padding: 0 20vw;
-
+    padding: 5rem 20vw;
 }
 
 .tbcConcept{
-    background-image: url('./assets/images/tbsConceptBackground.png');
+    background-image: url("../images/tbsConceptBackground.png");
+    background-size: 100% 110%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    height: 100%;
+    width: 100%;
+    
 
     padding: 6rem ;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     max-width: 40rem;
-    background-color: green;
-    min-width: 71.375rem;
+    min-width: 100%;
     min-height: 23.5rem;
     border-radius: 0.5rem;
     color: #FFFFFF;
@@ -148,6 +184,7 @@ header .container{
     border: none;
     background-color: #3240e5;
     color: #FFFFFF;
+    border-radius: 0.3rem;
 }
 
 .tbcConcept button img{
@@ -178,8 +215,11 @@ header .container{
 }
 
 .digital{
-    background-image: url('./assets/images/digital.png');
-    background-color: green;
+    background-image: url('../images/digital.png');
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    
+
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -190,7 +230,13 @@ header .container{
 }
 
 .card-360{
-    background-color: green;
+    background-image: url('../images/360.png');
+    background-size: 130% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -202,7 +248,12 @@ header .container{
 }
 
 .premium{
-    background-color: green;
+    background-image: url('../images/premium.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -286,6 +337,10 @@ header .container{
     color: #555f62;
 }
 
+.suggestslider {
+    max-height: 28rem;
+}
+
 .suggestSliderHeader{
     display: flex;
     justify-content: space-between;
@@ -305,33 +360,51 @@ header .container{
 
 .slider-container{
     width: 100%;
-    max-width: 69.375rem; 
+    max-width: 71.375rem; 
     height: 400px;
     cursor: grab;
 }
 
-.anotslider-another-one{
-    padding-left: 10px;
+.slider-another-one{
+    padding-left: 1rem;
 }
 
 .slide{
     border: 1px solid #e1e4e5;
-    border-radius: 10px;
+    border-radius: 1rem;
+    min-height: 20rem;
 }
 
 .image{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem 1rem 0 0;
+    max-height: 13.5rem;
+    min-width: 21.75rem;
 }
 
 .slider-text{
-    padding-left: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.slider-description{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+
 }
 
 .digital-bank{
     background-color: #FFFFFF;
     position: absolute;
     padding: 6rem 0;
+    max-width: 71.375rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .digital-left{
@@ -341,8 +414,215 @@ header .container{
     max-width: 35rem;
 }
 
+.digital-right img{
+    height: 23.125rem;
+}
+
 .download-logos{
     width: 15rem;
     display: flex;
     column-gap: 1rem;
+}
+
+.products{
+    margin-top: 40rem;
+    max-width: 71.375rem;
+    width: 100%;
+}
+
+.products h2{
+    padding-bottom: 2rem;
+}
+
+.products-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-conteiner{
+    max-width: 21.75rem;
+    max-height: 28rem;
+    border: 1px solid #e1e4e5;
+    border-radius: 1rem 1rem 0 0 ;
+    cursor: pointer;
+
+}
+
+.products-conteiner img{
+    max-width: 21.75rem;
+}
+
+.products-description{
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.products-description p{
+    padding-top: 1.5rem;
+}
+
+.personal-bank{
+    background-image: url('../images/personalbank.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+
+    margin: 5rem 0 7rem;
+    padding: 6rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 40rem;
+    min-width: 100%;
+    min-height: 23.5rem;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+}
+
+.personal-bank p{
+    max-width: 50%;
+}
+
+.personal-bank button{
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    background-color: #3240e5;
+    color: #FFFFFF;
+    border-radius: 0.3rem;
+}
+
+.personal-bank button img{
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+.awards-slider{
+    display: flex;
+    
+}
+
+.award-slide{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 21.5rem;
+    max-height: 30rem;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #FFFFFF;
+}
+
+.slider-another-one{
+    max-height: 30rem;
+}
+
+.award-slide p{
+    max-width: 15rem;
+}
+
+.award-slide img{
+    max-width: 8rem;
+}
+
+footer{
+    padding-bottom: 2rem;
+}
+
+.footer-head{
+    padding: 3rem 0;
+    width: 71.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-head .logo svg{
+    color: #555F62;
+}
+
+.footer-main{
+    display: grid;
+    grid-template-areas:
+    'A A A A';
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;    
+    padding-bottom: 2rem;
+}
+
+.footer-component{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-component p:hover{
+    color: #3240e5;
+    cursor: pointer;
+}
+
+.footer-svg{
+    max-width: 1rem;
+}
+
+.social-network{
+    display: flex;
+    gap: 1rem;
+    max-width: 5rem;
+}
+
+.footer-bottom{
+    padding-top: 2rem;
+    border-top: 1px solid #eef1f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-bottom-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-bottom-right p:hover{
+    cursor: pointer;
+    color: #3240e5;
+}
+
+
+.tbc-logo{
+    max-width: 1.5rem;
+}
+
+.sticky{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.sticky-inside{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: #FFFFFF;
 }
